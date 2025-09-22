@@ -1,0 +1,14 @@
+# Core dependencies for CS6913 projects
+numpy
+pandas
+scikit-learn
+nltk
+beautifulsoup4
+requests
+
+# For search-related work
+whoosh
+rank-bm25
+
+# For notebooks
+jupyter
