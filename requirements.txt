@@ -1,14 +1,10 @@
-# Core dependencies for CS6913 projects
-numpy
-pandas
-scikit-learn
-nltk
-beautifulsoup4
-requests
-
-# For search-related work
-whoosh
-rank-bm25
-
-# For notebooks
-jupyter
+PyYAML>=6.0
+aiohttp>=3.9
+async-timeout>=4.0.3
+beautifulsoup4>=4.13
+lxml>=5.0.0
+pytest>=8.0
+opentelemetry-sdk>=1.27.0
+opentelemetry-api>=1.27.0
+opentelemetry-exporter-otlp>=1.27.0   # OTLP exporter (to console or Collector)
+psutil>=5.9                            # for CPU/memory gauges

@@ -1,0 +1,20 @@
+politeness_delay: 1.0    # seconds between requests to same domain
+concurrency: 5           # number of parallel workers
+max_depth: 3             # how many hops from seeds
+max_pages: 200           # total pages to crawl
+user_agent: "CS6913Crawler/1.0 (NYU college project for CS6913 Web Search Engines)"
+
+
+#telemetry:
+
+otel:
+  enabled: true
+  service_name: "cs6913-crawler"
+  # exporter: "console" or "otlp"
+  exporter: "oltp"
+  # If exporter=otlp, set these (Collector or SaaS):
+  otlp_endpoint: "http://localhost:4317"   # gRPC (collector default)
+  # or for HTTP: "http://localhost:4318" and set use_http: true
+  use_http: false
+
+  metrics_interval_s: 10     # how often OTel reader flushes metrics
